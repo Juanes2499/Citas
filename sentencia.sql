@@ -2,7 +2,7 @@
 -- --------------------------------------------------------
 -- Estructura de tabla para la tabla `registration_user`
 
-DATABASE CREATE test;
+DATABASE CREATE salud_eps;
 DROP TABLE IF EXISTS `registration_user`;
 CREATE TABLE IF NOT EXISTS `registration_user` (
   `nombre` varchar(50) NOT NULL,
