@@ -3,6 +3,8 @@ const express = require('express');
 const app = express();
 
 const userRouter = require('./api_rest/users/user.router');
+const agendarCitaRouter = require('./api_rest/agendarCitas/agendarCitas.router');
+const medicamentos = require('./api_rest/medicamentos/medicamento.router');
 
 app.get("/api",(req, res) =>{
     res.json({
@@ -15,6 +17,8 @@ app.use(express.json());
 
 //Router
 app.use("/api/users", userRouter);
+app.use("/api/agendarCitas", agendarCitaRouter);
+app.use("/api/medicamentos", medicamentos);
 
 //Desplegar server
 const ServerDeploy = new Promise((resolve,reject)=>{

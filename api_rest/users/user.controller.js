@@ -150,7 +150,7 @@ module.exports = {
           } else {
             return res.json({
               success: 0,
-              data: "Invalid email or password"
+              data: "Invalid email or password",
             });
           }
         });
